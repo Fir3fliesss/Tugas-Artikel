@@ -3,27 +3,157 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{Judul-artikel} - Fireflies_News</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Fireflies News</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="https://github.com/Fir3fliesss/FirefliesAI/blob/master/public/fireflies-logo1.png?raw=true" type="image/x-icon">
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <article>
-        <h1 class="text-4xl font-bold underline text-red-800">
-          {judul artikel}
+  <body class="bg-gray-900 text-gray-100">
+    <!-- Navbar -->
+<!-- component -->
+<nav class="flex justify-between bg-green-800 px-20 py-10 items-center bg-white">
+  <h1 class="text-xl font-bold">Fireflies News</h1>
+  <div class="flex items-center">
+    <div class="flex items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 pt-0.5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      </svg>
+      <input class="ml-2 outline-none bg-transparent font-" type="text" name="search" id="search" placeholder="Search..." />
+    </div>
+    <ul class="flex items-center space-x-6">
+      <a href="#"><li class="font-semibold">Home</li></a>
+      <a href="#"><li class="font-semibold">Articles</li></a>
+      <a href="">
+          <li>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M12 14l9-5-9-5-9 5 9 5z" />
+            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+          </svg>
+        </li>
+      </a>
+      <a href="#">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+            </svg>
+        </li>
+      </a>
+    </ul>
+  </div>
+</nav>
+
+<main>
+    <div class="container mx-auto mt-20 flex">
+      <!-- Main Content -->
+      <div class="w-2/3 bg-gray-800 p-20 rounded-2xl">
+        <div class="flex items-center space-x-2">
+          <img
+            src="https://github.com/Fir3fliesss/FirefliesAI/blob/master/public/fireflies-logo1.png?raw=true"
+            alt="Author"
+            class="w-10 h-10 rounded-full"
+          />
+          <span class="text-xl font-light">Admin Fireflies</span>
+          <span class="text-xl font-light">•</span>
+          <span class="text-xl font-light">28 Mar 2023</span>
+        </div>
+        <h1 class="text-6xl font-extrabold my-4">
+          Tutorial CSS: Menentukan Ukuran Elemen dengan Satuan yang Tepat
         </h1>
-        <img src="" alt="" />
-        <p>{Isi-artikel}</p>
-      </article>
-    </main>
+        <hr>
+        <div class="my-6">
+          <a href="#">
+            <span class="bg-gray-700 text-white px-3 py-1 rounded-full">
+                #CSS
+            </span>
+          </a>
+        </div>
+        <img
+          src="https://via.placeholder.com/600x300"
+          alt="Article Image"
+          class="mt-4 rounded-lg"
+        />
+        <p class="mt-4 text-lg">
+          Zaman dulu, menentukan ukuran elemen di web tidak ribet. Tinggal
+          sat-set pakai piksel dan persen.
+        </p>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="w-1/3 ml-8 space-y-8">
+        <!-- Newsletter -->
+        <div class="bg-gray-800 p-6 rounded-2xl">
+          <h2 class="text-2xl font-bold mb-4 tracking-tight">📫 Newsletter..</h2>
+          <p class="text-xl font-normal text-slate-300 mb-4">
+            Tidak mau ketinggalan berita-berita hot dan sedang viral? Maunya selalu dapat update berita?
+          </p>
+          <a href="#" class="inline-flex gap-2 justify-center items-center px-3 py-2 my-4 text-white w-full bg-teal-600 hover:bg-teal-700 focus:ring-2 focus:ring-teal-400 rounded-full active:bg-teal-500"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5A2.25 2.25.0 0119.5 19.5h-15a2.25 2.25.0 01-2.25-2.25V6.75m19.5.0A2.25 2.25.0 0019.5 4.5h-15A2.25 2.25.0 002.25 6.75m19.5.0v.243a2.25 2.25.0 01-1.07 1.916l-7.5 4.615a2.25 2.25.0 01-2.36.0L3.32 8.91A2.25 2.25.0 012.25 6.994V6.75"></path></svg>
+            Subscribe</a>
+        </div>
+
+        <!-- Latest Articles -->
+        <div class="mb-16 rounded-2xl bg-gray-800 shadow-md">
+          <h2 class="text-2xl font-bold p-4 tracking-tight border-b dark:border-slate-700">🔥 Artikel Terbaru</h2>
+          <a href="/cpp-union/?&amp;utm_source=petanikode&amp;utm_medium=sidebar-widget" title="Belajar C++ #13: Mengenal Tipe Data Union">
+            <div class="flex justify-between items-center gap-2 p-6 hover:bg-slate-100 dark:hover:bg-slate-700 active:scale-95 active:rounded-xl transition-all">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight line-clamp-2 leading-tight mb-1">Belajar C++ #13: Mengenal Tipe Data Union</h3>
+                <p class="text-sm text-slate-700 dark:text-slate-200 line-clamp-1">03 May 2024 • baca 5 menit</p>
+              </div>
+              <img class="w-16 h-16 lazyload rounded-lg lazyloaded" src="https://www.petanikode.com/img/cpp/cpp-sqr.png" data-src="https://www.petanikode.com/img/cpp/cpp-sqr.png" alt="Post thumbnail" height="64" width="64">
+            </div>
+          </a>
+          <a href="/cpp-struct/?&amp;utm_source=petanikode&amp;utm_medium=sidebar-widget" title="Belajar C++ #12: Mengenal Tipe Data Struct">
+            <div class="flex justify-between items-center gap-2 p-6 hover:bg-slate-100 dark:hover:bg-slate-700 active:scale-95 active:rounded-xl transition-all">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight line-clamp-2 leading-tight mb-1">Belajar C++ #12: Mengenal Tipe Data Struct</h3>
+                <p class="text-sm text-slate-700 dark:text-slate-200 line-clamp-1">01 May 2024 • baca 8 menit</p>
+              </div>
+              <img class="w-16 h-16 lazyload rounded-lg lazyloaded" src="https://www.petanikode.com/img/cpp/cpp-sqr.png" data-src="https://www.petanikode.com/img/cpp/cpp-sqr.png" alt="Post thumbnail" height="64" width="64">
+            </div>
+          </a>
+          <a href="/cpp-enum/?&amp;utm_source=petanikode&amp;utm_medium=sidebar-widget" title="Belajar C++ #11: Tipe Data Enum di C++">
+            <div class="flex justify-between items-center gap-2 p-6 hover:bg-slate-100 dark:hover:bg-slate-700 active:scale-95 active:rounded-xl transition-all">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight line-clamp-2 leading-tight mb-1">Belajar C++ #11: Tipe Data Enum di C++</h3>
+                <p class="text-sm text-slate-700 dark:text-slate-200 line-clamp-1">28 Apr 2024 • baca 6 menit</p>
+              </div>
+              <img class="w-16 h-16 lazyload rounded-lg lazyloaded" src="https://www.petanikode.com/img/cpp/cpp-sqr.png" data-src="https://www.petanikode.com/img/cpp/cpp-sqr.png" alt="Post thumbnail" height="64" width="64">
+            </div>
+          </a>
+          <a href="/cpp-pointer/?&amp;utm_source=petanikode&amp;utm_medium=sidebar-widget" title="Belajar C++ #14: Memahami Pointer di C++">
+            <div class="flex justify-between items-center gap-2 p-6 hover:bg-slate-100 dark:hover:bg-slate-700 active:scale-95 active:rounded-xl transition-all">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight line-clamp-2 leading-tight mb-1">Belajar C++ #14: Memahami Pointer di C++</h3>
+                <p class="text-sm text-slate-700 dark:text-slate-200 line-clamp-1">23 Nov 2023 • baca 10 menit</p>
+              </div>
+              <img class="w-16 h-16 lazyload rounded-lg lazyloaded" src="https://www.petanikode.com/img/cpp/cpp-sqr.png" data-src="https://www.petanikode.com/img/cpp/cpp-sqr.png" alt="Post thumbnail" height="64" width="64">
+            </div>
+          </a>
+          <a href="/unity-install-mac/?&amp;utm_source=petanikode&amp;utm_medium=sidebar-widget" title="Cara Install dan Setup Unity Engine di Mac dengan Benar">
+            <div class="flex justify-between items-center gap-2 p-6 hover:bg-slate-100 dark:hover:bg-slate-700 active:scale-95 active:rounded-xl transition-all">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight line-clamp-2 leading-tight mb-1">Cara Install dan Setup Unity Engine di Mac dengan Benar</h3>
+                <p class="text-sm text-slate-700 dark:text-slate-200 line-clamp-1">23 Nov 2023 • baca 5 menit</p>
+              </div>
+              <img class="w-16 h-16 lazyload rounded-lg lazyloaded" src="https://www.petanikode.com/img/cpp/cpp-sqr.png" data-src="https://www.petanikode.com/img/cpp/cpp-sqr.png" alt="Post thumbnail" height="64" width="64">
+            </div>
+          </a>
+          <a href="/css-sizing/?&amp;utm_source=petanikode&amp;utm_medium=sidebar-widget" title="Tutorial CSS: Menentukan Ukuran Elemen dengan Satuan yang Tepat">
+            <div class="flex justify-between items-center gap-2 p-6 hover:bg-slate-100 dark:hover:bg-slate-700 active:scale-95 active:rounded-xl transition-all">
+              <div>
+                <h3 class="text-lg font-semibold tracking-tight line-clamp-2 leading-tight mb-1">Tutorial CSS: Menentukan Ukuran Elemen dengan Satuan yang Tepat</h3>
+                <p class="text-sm text-slate-700 dark:text-slate-200 line-clamp-1">28 Mar 2023 • baca 8 menit</p>
+              </div>
+              <img class="w-16 h-16 lazyload rounded-lg lazyloaded" src="https://www.petanikode.com/img/cpp/cpp-sqr.png" data-src="https://www.petanikode.com/img/cpp/cpp-sqr.png" alt="Post thumbnail" height="64" width="64">
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+</main>
   </body>
 </html>
